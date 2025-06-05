@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Connect 4 Game</title>
+        <link id="theme" rel="stylesheet" href="./connect.css">
+    </head>
+    <body>
+        <audio id="click" src="button1.mp3" preload="auto"></audio>
+        <audio id="special" src="special.mp3" preload="auto"></audio>
+        <audio id="win" src="win.mp3" preload="auto"></audio>
+        <audio id="lose" src="lose.mp3" preload="auto"></audio>
+        <button id="sound">Sound : ON</button>
+        <h1 id="titl" style="font-size: 45px;">Connect 4</h1>
+        <canvas id="board" height="500px" width="600px"></canvas>
+        <button id="themebutton"></button>
+        <button id="restart">Restart Game</button>
+        <button id="undo">Undo</button>
+        <h4 id="warning">*you will not get your powerup back</h4>
+        <button id="replay">Replay</button>
+        <button id="leaderboard_button">Leaderboard</button>
+        <div id="leader">
+            <h1 id="player1wins">No.of Player 1 wins: </h1>
+            <h1 id="player2wins">No.of Player 2 wins: </h1>
+            <h1 id="least">Least Moves to a win: </h1>
+        </div>
+        <button id="reset">Reset Leaderboard</button>
+        <div id="player1_controls">
+            <h1 id="player1_title">Insert Coin</h1>
+            <h2 id="colno1">1</h2>
+            <h2 id="colno2">2</h2>
+            <h2 id="colno3">3</h2>
+            <h2 id="colno4">4</h2>
+            <h2 id="colno5">5</h2>
+            <h2 id="colno6">6</h2>
+            <h2 id="colno7">7</h2>
+            <h2 id="player_colname">Column Selector</h2>
+            <button id="col_1_1"></button>
+            <button id="col_2_1"></button>
+            <button id="col_3_1"></button>
+            <button id="col_4_1"></button>
+            <button id="col_5_1"></button>
+            <button id="col_6_1"></button>
+            <button id="col_7_1"></button>
+        </div>
+        <div id="player1_timer">
+            <h1><u>Time Left:</u></h1>
+            <h1 id="time_text_1">3:00</h2>
+        </div>
+        <div id="powerups_1">
+            <h1>Powerups</h1>
+            <button id="extratime1">+30 Sec for You</button>
+            <button id="reducetime1">-20 Sec for Opponent</button>
+            <button id="remove_block1">Remove Block</button>
+            <button id="switchcolors1">Switch Colours</button>
+        </div>
+        <div id="player2_controls">
+            <h1 id="player2_title">Wait</h1>
+            <h2 id="colno1">1</h2>
+            <h2 id="colno2">2</h2>
+            <h2 id="colno3">3</h2>
+            <h2 id="colno4">4</h2>
+            <h2 id="colno5">5</h2>
+            <h2 id="colno6">6</h2>
+            <h2 id="colno7">7</h2>
+            <h2 id="player_colname">Column Selector</h2>
+            <button id="col_1_2"></button>
+            <button id="col_2_2"></button>
+            <button id="col_3_2"></button>
+            <button id="col_4_2"></button>
+            <button id="col_5_2"></button>
+            <button id="col_6_2"></button>
+            <button id="col_7_2"></button>
+        </div>
+        <div id="player2_timer">
+            <h1><u>Time Left:</u></h1>
+            <h1 id="time_text_2">3:00</h2>
+        </div>
+         <div id="powerups_2">
+            <h1>Powerups</h1>
+            <button id="extratime2">+30 Sec for You</button>
+            <button id="reducetime2">-20 Sec for Opponent</button>
+            <button id="remove_block2">Remove Block</button>
+            <button id="switchcolors2">Switch Colours</button>
+        </div>
+        <h1 id="player1_name">Player 1</h1>
+        <h1 id="player2_name">Player 2</h1>
+        <script src="./connect4.js"></script>
+    </body>
+</html>
